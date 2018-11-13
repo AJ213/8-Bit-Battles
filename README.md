@@ -6,5 +6,5 @@ This is an old Turn Based Strategy game made in 2016
 
 <a href="https://github.com/AJ213">AJ213</a> 
 
-## Downloads
+## Download
 <a href="https://www.dropbox.com/sh/ryqhojsaoftur91/AAA1qhmL5ylaXx_eWaT6XL9Fa?dl=0">8-Bit Battles</a>
