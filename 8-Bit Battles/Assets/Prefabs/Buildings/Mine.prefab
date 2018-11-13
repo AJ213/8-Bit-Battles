@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1749792794305622}
+  m_IsPrefabParent: 1
+--- !u!1 &1749792794305622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224816308725709438}
+  - component: {fileID: 222839161748659906}
+  - component: {fileID: 114274249939910046}
+  - component: {fileID: 114698055500923308}
+  m_Layer: 0
+  m_Name: Mine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114274249939910046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749792794305622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 5a277f671e240634f8bf25cd5266ae86, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114698055500923308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749792794305622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2be68ec3432794aa751518684ef9c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingSizeX: 1
+  buildingSizeY: 1
+  isCollidable: 1
+  WhatBuilding: 2
+  isRedBuilding: 0
+  isGreenBuilding: 0
+  mineSprites:
+  - {fileID: 21300000, guid: 5a277f671e240634f8bf25cd5266ae86, type: 3}
+  - {fileID: 21300000, guid: 69e15c522991e6b41bbe902da33f65d1, type: 3}
+  - {fileID: 21300000, guid: 09cd9099a89afdb4eaab947814a662e2, type: 3}
+  - {fileID: 21300000, guid: 5066c8cf4c944f146ba3131a1872506c, type: 3}
+  - {fileID: 21300000, guid: 22e1b882e3e65c4429bdccdee358cddd, type: 3}
+  - {fileID: 21300000, guid: feca35e2a79ef744298f3012506072ac, type: 3}
+  - {fileID: 21300000, guid: 93b58d635b6f8b84a8ee9226681acf0e, type: 3}
+  - {fileID: 21300000, guid: 91c445526bb2f7e40852f40df6a5feee, type: 3}
+  - {fileID: 21300000, guid: 7856edc1c09b91c4b9757292d499754e, type: 3}
+  mineList: []
+  ownership: 0
+--- !u!222 &222839161748659906
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749792794305622}
+--- !u!224 &224816308725709438
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749792794305622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}

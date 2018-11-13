@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ea28765159a5646a3809f59e855f31, type: 3}
+  m_Name: GreenSpecialForces
+  m_EditorClassIdentifier: 
+  name: Special Forces
+  description: 'Weapons: Machine Gun. High resistance with high movement.'
+  artwork: {fileID: 21300000, guid: 2049281e090defe4cb5e398d1066ffaf, type: 3}
+  cost: 175
+  shopOrder: 15
+  unitIndex: 34
+  isUnit: 1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ea28765159a5646a3809f59e855f31, type: 3}
+  m_Name: RedOfficer
+  m_EditorClassIdentifier: 
+  name: Officer
+  description: 'Weapons: Synthetic, Magnum. Orders units to move again like the little
+    peasants that they are.'
+  artwork: {fileID: 21300000, guid: 8e2a77d3521bdf7428289f6b1ed6651b, type: 3}
+  cost: 150
+  shopOrder: 12
+  unitIndex: 12
+  isUnit: 1
