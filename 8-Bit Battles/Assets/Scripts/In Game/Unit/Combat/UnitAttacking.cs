@@ -256,7 +256,7 @@ public class UnitAttacking : MonoBehaviour
         if (IfUnitIsStillAlive(defendingUnit) == false)                                                                    //Defender Alive?
             return;
 
-        if (isUnitInRange(attackingUnit, defendingUnit))                                                                    //checks if defender is in range to counter
+        if (IsUnitInRange(attackingUnit, defendingUnit))                                                                    //checks if defender is in range to counter
         {
             AttackUnit(defendingUnit, attackingUnit);                                                                          //Counter attack
             if (defendingUnit.GetComponent<UnitInventory>().currentWeapon.WeaponEffectType == Weapon.WeaponEffect.Double)  //Attack again if weapon doubles enemies
@@ -277,7 +277,7 @@ public class UnitAttacking : MonoBehaviour
         }
         else if (attackingUnitStats.speed - defendingUnitStats.speed >= 5)
         {
-            if (isUnitInRange(attackingUnit, defendingUnit))                                                                    //checks if defender is in range to counter
+            if (IsUnitInRange(attackingUnit, defendingUnit))                                                                    //checks if defender is in range to counter
             {
                 AttackUnit(defendingUnit, attackingUnit);                                                                         //Second counter attack
                 if (defendingUnit.GetComponent<UnitInventory>().currentWeapon.WeaponEffectType == Weapon.WeaponEffect.Double) //Attack again if weapon doubles enemies
@@ -309,7 +309,7 @@ public class UnitAttacking : MonoBehaviour
         }
     }
 
-    bool isUnitInRange(GameObject attackingUnit, GameObject defendingUnit)
+    private bool IsUnitInRange(GameObject attackingUnit, GameObject defendingUnit)
     {
         Vector2 distanceBetweenUnitsVector2 = new Vector2(ScriptLink.mouseController.EnemyUnit.transform.position.x, ScriptLink.mouseController.EnemyUnit.transform.position.y) - new Vector2(ScriptLink.mouseController.SelectedUnit.transform.position.x, ScriptLink.mouseController.SelectedUnit.transform.position.y);
         int distanceBetweenUnits = Mathf.Abs((int)distanceBetweenUnitsVector2.x + (int)distanceBetweenUnitsVector2.y);

@@ -14,12 +14,12 @@ public class UnitArray : MonoBehaviour
 		{
 			allUnits [(int) (Unit.transform.position.x - 0.5f), (int) (Unit.transform.position.y - 0.5f)] = Unit;
 		}
-		foreach (GameObject Unit in ScriptLink.unitSpawner.greenUnits) 
+		foreach (GameObject Unit in ScriptLink.unitSpawner.greenUnits)
 		{
-			allUnits [(int) (Unit.transform.position.x - 0.5f), (int) (Unit.transform.position.y - 0.5f)] = Unit;
+			allUnits[(int)(Unit.transform.position.x - 0.5f), (int)(Unit.transform.position.y - 0.5f)] = Unit;
 		}
 	}
-
+	
 	void ClearUnitArray()
 	{
 		int x;

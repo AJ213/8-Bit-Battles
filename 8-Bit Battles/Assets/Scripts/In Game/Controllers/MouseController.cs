@@ -15,7 +15,7 @@ public class MouseController : MonoBehaviour
     [SerializeField] LayerMask activeTileLayerMask;
     [SerializeField] LayerMask unitLayerMask;
 
-    GameObject selectedUnit;
+    [SerializeField] GameObject selectedUnit;
     GameObject enemyUnit;
 
     [SerializeField] GameObject selectionBox;

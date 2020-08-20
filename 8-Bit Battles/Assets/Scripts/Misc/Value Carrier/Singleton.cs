@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Singleton : MonoBehaviour
 {
-    private static Singleton singleton;
+    static Singleton singleton; //used to keep sure this gameobject is not deleted
 
-    private void SingletonForGameObject()
+    void Awake()
+    {
+        SingletonForGameObject();
+    }
+
+    void SingletonForGameObject() //This makes sure this gameobject with this script is the only one that can exist.
     {
         if (singleton == null)
         {
             singleton = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
-    }
-
-    private void Awake()
-    {
-        SingletonForGameObject();
     }
 }

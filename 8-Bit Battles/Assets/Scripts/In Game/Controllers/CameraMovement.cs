@@ -93,7 +93,7 @@ public class CameraMovement : MonoBehaviour {
     }
 
     //Public so this can be called from another sript or attached to a button if the screen needs to be resized at runtime
-    void ClampCamera()
+    public void ClampCamera()
     {
 
         min = activeTileMap.GetComponent<TilemapCollider2D>().bounds.center - activeTileMap.GetComponent<TilemapCollider2D>().bounds.extents;
