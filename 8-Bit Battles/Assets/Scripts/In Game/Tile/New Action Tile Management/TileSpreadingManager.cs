@@ -43,8 +43,8 @@ public class TileSpreadingManager : MonoBehaviour
 
 	public void InitializeActionTileArray()
 	{
-		mapWidth = ScriptLink.tilesToArray.mapXLimit;
-		mapHeight = ScriptLink.tilesToArray.mapYLimit;
+		mapWidth = TilesToArray.MapBounds.x;
+		mapHeight = TilesToArray.MapBounds.y;
 		actionTiles = new GameObject[mapWidth, mapHeight];
 		tempActionTiles = new GameObject[mapWidth, mapHeight];
 		actionTileSpawningPlan = new bool[mapWidth, mapHeight];

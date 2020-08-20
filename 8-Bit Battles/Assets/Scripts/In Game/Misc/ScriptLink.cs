@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ScriptLink : MonoBehaviour
 {
-    public static TilesToArray tilesToArray;
     public static MouseController mouseController;
     public static FlowControl flowController;
     public static UnitMenuControl unitMenuControl;
@@ -29,7 +28,6 @@ public class ScriptLink : MonoBehaviour
 
     void InitializeScriptLinks()
     {
-        tilesToArray = GameObject.FindGameObjectWithTag("GameController").GetComponent<TilesToArray>();
         mouseController = GameObject.FindGameObjectWithTag("GameController").GetComponent<MouseController>();
         flowController = GameObject.FindGameObjectWithTag("GameController").GetComponent<FlowControl>();
         unitMenuControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<UnitMenuControl>();

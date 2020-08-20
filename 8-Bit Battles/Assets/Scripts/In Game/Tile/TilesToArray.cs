@@ -7,7 +7,9 @@ public class TilesToArray : MonoBehaviour
 {
     Tilemap ourTilemap;
     string[,] tileNames;
-    public TileProperties[,] tiles;
+    public static TileProperties[,] tiles;
+    public static Vector2Int MapBounds => mapBounds;
+    private static Vector2Int mapBounds = new Vector2Int(0, 0);
 
     public delegate void MapSizeInstantiatedEventHandler();
     public static event MapSizeInstantiatedEventHandler OnMapSizeInstantianted;
@@ -18,9 +20,6 @@ public class TilesToArray : MonoBehaviour
             OnMapSizeInstantianted();
         }
     }
-
-    public int mapXLimit;
-    public int mapYLimit;
 
     public Dictionary<string, TileProperties.TileType> tileNameStorage = new Dictionary<string, TileProperties.TileType>();
 
@@ -53,8 +52,8 @@ public class TilesToArray : MonoBehaviour
         TileNamesToArray();
         TileNamesArrayToTiles();
 
-        mapXLimit = tiles.GetLength(1);
-        mapYLimit = tiles.GetLength(0);
+        mapBounds.x = tiles.GetLength(1);
+        mapBounds.y = tiles.GetLength(0);
         MapSizeInstantiated();
         //TestArray();
     }

@@ -16,7 +16,7 @@ public class MovementTypes : MonoBehaviour
 
 	public int MovementCostByMovementType(int x, int y)
 	{
-		TileProperties.TileType tileType = ScriptLink.tilesToArray.tiles [x, y].tileIdentity;
+		TileProperties.TileType tileType = TilesToArray.tiles [x, y].tileIdentity;
 		switch (unitOfChoice)
 		{
 			case UnitOfChoice.SelectedUnit:

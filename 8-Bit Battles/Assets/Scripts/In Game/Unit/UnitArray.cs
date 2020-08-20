@@ -8,7 +8,7 @@ public class UnitArray : MonoBehaviour
 
 	public void UpdateUnitArray()
 	{
-		allUnits = new GameObject[ScriptLink.tilesToArray.mapXLimit, ScriptLink.tilesToArray.mapYLimit];
+		allUnits = new GameObject[TilesToArray.MapBounds.x, TilesToArray.MapBounds.y];
 		ClearUnitArray ();
 		foreach (GameObject Unit in ScriptLink.unitSpawner.redUnits) 
 		{
@@ -24,9 +24,9 @@ public class UnitArray : MonoBehaviour
 	{
 		int x;
 		int y;
-		for (x = 0; x < ScriptLink.tilesToArray.mapXLimit; x++) 
+		for (x = 0; x < TilesToArray.MapBounds.x; x++) 
 		{
-			for (y = 0; y < ScriptLink.tilesToArray.mapYLimit; y++) 
+			for (y = 0; y < TilesToArray.MapBounds.y; y++) 
 			{
 				allUnits [x, y] = null;
 			}

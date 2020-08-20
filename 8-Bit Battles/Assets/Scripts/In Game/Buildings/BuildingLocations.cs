@@ -26,7 +26,7 @@ public class BuildingLocations : MonoBehaviour
     }
     void InstantiateArray()
     {
-        BuildingIdentityLocations = new BuildingProperties.BuildingIdentity[ScriptLink.tilesToArray.mapXLimit, ScriptLink.tilesToArray.mapYLimit];
+        BuildingIdentityLocations = new BuildingProperties.BuildingIdentity[TilesToArray.MapBounds.x, TilesToArray.MapBounds.y];
         for (int x = 0; x < BuildingIdentityLocations.GetLength(1); x++)
         {
             for (int y = 0; y < BuildingIdentityLocations.GetLength(0); y++)

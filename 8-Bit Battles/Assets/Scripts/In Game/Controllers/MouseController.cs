@@ -138,7 +138,7 @@ public class MouseController : MonoBehaviour
 
     void TileSelection()
     {
-        if ((exactMouseLocation.x > 0 && exactMouseLocation.x < ScriptLink.tilesToArray.mapXLimit) && (exactMouseLocation.y > 0 && exactMouseLocation.y < ScriptLink.tilesToArray.mapYLimit))
+        if ((exactMouseLocation.x > 0 && exactMouseLocation.x < TilesToArray.MapBounds.x) && (exactMouseLocation.y > 0 && exactMouseLocation.y < TilesToArray.MapBounds.y))
         {
             unitSelectionLocation = new Vector2(Mathf.FloorToInt(exactMouseLocation.x), Mathf.FloorToInt(exactMouseLocation.y));
             MovementTileCheck();
